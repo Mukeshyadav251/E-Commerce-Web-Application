@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <!--Ecommerce Header-->
+        <header class="header">
+            <div class="header_top">
+              <div class="header_container">
+                <div class="header_contact">
+                  <span>(+01) - 2345 - 6789</span>
+                  <span>Our location</span>
+                </div>
+                <p class="header__alert-news">
+                  Super Values Deals - Save more coupons
+                </p>
+                <a href="login_register.html" target="_self" class="header__top-action" style="color:white">
+                  Log In / Sign Up
+                </a>
+                <span id="userEmailDisplay" style="color:white;" ></span>
+              </div>
+            </div>
+            <nav class="nav container">
+                <a href="index.html" class="nav_logo">
+                 <h1 class="logo">FASHION</h1>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                  <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                    </a>
+                    
+                  </div>
+                  <ul class="nav__list">
+                    <li class="nav_item">
+                      <a href="Index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="accounts.html" class="nav__link">My Account</a>
+                    </li>
+                   
+                    <li class="nav__item">
+                      <a href="login_register.html" class="nav__link">Login</a>
+                    </li>
+                  </ul>
+                  <div class="header_search">
+                    <input
+                      type="text"
+                      placeholder="Search For Items..."
+                      class="form_input"
+                    />
+                    <button class="search_btn">
+                      <img src="Images/search logo.png" height="35px" width="30px">
+                    </button>
+                  </div>
+                </div>
+                
+              </nav>
+            
+        
+        
+    </header>
+    <script>
+
+        // Display the user's email if available
+
+        window.onload = function() {
+            const userEmail = sessionStorage.getItem('userEmail');
+            if (userEmail) {
+                document.getElementById('userEmailDisplay').innerText = `Welcome, ${userEmail}`;
+            }
+        };
+    </script>
+
+<div class="frontImage">
+    <img src="Images/frontimage.jpg" width="1620px" height="600px">
+</div>
+
+<div class="filter_button">
+    <button class="filter_btn" type="btn" data-filter="All">All</button>
+    <button class="filter_btn" type="btn" data-filter="Mens">Mens</button>
+    <button class="filter_btn" type="btn" data-filter="Womens">Womens</button>
+    <button class="filter_btn" type="btn" data-filter="Kids">Kids</button>
+
+</div>
+
+<!--Product list -->
+
+<div class="product_container">
+<div class="product-list">
+    
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens1.jpg" alt="Mens Product 1" class="product-image" width="170px">
+        <h2 class="product-title"> Men Brown Shirt</h2>
+        <p class="product-price">$29.99 <del>$32.22</del> <span class="offer">12% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women1.jpg" alt="Womens Product 1" class="product-image" width="170px">
+        <h2 class="product-title">Womens Green Bag</h2>
+        <p class="product-price">$21.99 <del>$35.22</del> <span class="offer">17% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids1.jpg" alt="Kids Product 1" class="product-image" width="170px">
+        <h2 class="product-title">Kids Winter clothes</h2>
+        <p class="product-price">$15.99 <del>$25</del> <span class="offer">20% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women2.jpg" alt="Womens Product 2" class="product-image" width="170px">
+        <h2 class="product-title">Women White Bag</h2>
+        <p class="product-price">$32.45 <del>$32.22</del> <span class="offer">5% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens2.jpg" alt="Mens Product 2" class="product-image" width="170px">
+        <h2 class="product-title">Mens Blue Shirt</h2>
+        <p class="product-price">$24.99 <del>$50.23</del> <span class="offer">19% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids2.jpg" alt="Kids Product 2" class="product-image" width="170px">
+        <h2 class="product-title">Kids Winter Clothes</h2>
+        <p class="product-price">$31.00 <del>$45.25</del> <span class="offer">25% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids3.jpg" alt="Kids Product 3" class="product-image" width="170px">
+        <h2 class="product-title">Kids Blue Winter Clothes</h2>
+        <p class="product-price">$70.36 <del>$52.18</del> <span class="offer">25% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens3.jpg" alt="Mens Product 3" class="product-image" width="170px">
+        <h2 class="product-title">Mens Black Shirt</h2>
+        <p class="product-price">$15.89 <del>$32.22</del> <span class="offer">21% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women3.jpg" alt="Womens Product 3" class="product-image" width="170px">
+        <h2 class="product-title">Women Black Bag</h2>
+        <p class="product-price">$36.23 <del>$56.12</del> <span class="offer">25% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens4.jpg" alt="Mens Product 4" class="product-image" width="170px">
+        <h2 class="product-title">Mens Brown Shirt</h2>
+        <p class="product-price">$56.99 <del>$78.25</del> <span class="offer">18% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women4.jpg" alt="Womens Product 4" class="product-image" width="170px">
+        <h2 class="product-title">Women Multicolor Bag</h2>
+        <p class="product-price">$51.54 <del>$65.21</del> <span class="offer">6% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens5.jpg" alt="Mens Product 5" class="product-image" width="170px">
+        <h2 class="product-title">Mens Dark Blue Shirt</h2>
+        <p class="product-price">$65.22 <del>100.25</del> <span class="offer">32% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids4.jpg" alt="Kids Product 4" class="product-image" width="170px">
+        <h2 class="product-title">Kids Winter Clothes</h2>
+        <p class="product-price">$89.32 <del>$110.56</del> <span class="offer">29% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women5.jpg" alt="Womens Product 5" class="product-image" width="170px">
+        <h2 class="product-title">Women Brown Bag</h2>
+        <p class="product-price">$99.99 <del>$150</del> <span class="offer">39% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens7.jpg" alt="Mens Product 7" class="product-image" width="170px">
+        <h2 class="product-title">Mens Purple Shirt</h2>
+        <p class="product-price">$110.21 <del>$160.21</del> <span class="offer">23% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids5.jpg" alt="Kids Product 5" class="product-image" width="170px">
+        <h2 class="product-title">Kids Green Winter Clothes</h2>
+        <p class="product-price">$150 <del>$210.56</del> <span class="offer">34% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens8.jpg" alt="Mens Product 8" class="product-image" width="170px">
+        <h2 class="product-title">Mens Green Shirt</h2>
+        <p class="product-price">$79.21 <del>$100.23</del> <span class="offer">41% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women6.jpg" alt="Womens Product 6" class="product-image" width="170px">
+        <h2 class="product-title">Women Multicolor Bag</h2>
+        <p class="product-price">$150.24 <del>$200</del> <span class="offer">25% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids6.jpg" alt="Kids Product 6" class="product-image" width="170px">
+        <h2 class="product-title">Kids Blue Winter Clothes</h2>
+        <p class="product-price">$87.66 <del>$99.99</del> <span class="offer">21% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens9.jpg" alt="Mens Product 9" class="product-image" width="170px">
+        <h2 class="product-title">Mens Light Blue Clothes</h2>
+        <p class="product-price">$79.88 <del>$89.25</del> <span class="offer">27% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens10.jpg" alt="Mens Product 10" class="product-image" width="170px">
+        <h2 class="product-title">Mens Black Clothes</h2>
+        <p class="product-price">$115.21 <del>$128.23</del> <span class="offer">8% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women7.jpg" alt="Womens Product 7" class="product-image" width="170px">
+        <h2 class="product-title">Women White-Black Bag</h2>
+        <p class="product-price">$120 <del>$160.28</del> <span class="offer">35% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens11.jpg" alt="Mens Product 11" class="product-image" width="170px">
+        <h2 class="product-title">Mens Light Green Shirt</h2>
+        <p class="product-price">$91.78 <del>$120.65</del> <span class="offer">14% off</span></p>
+    </div>
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids7.jpg" alt="Kids Product 7" class="product-image" width="170px">
+        <h2 class="product-title">Kids Dark Blue Winter Clothes</h2>
+        <p class="product-price">$210 <del>$250.32</del> <span class="offer">21% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids8.jpg" alt="Kids Product 8" class="product-image" width="170px">
+        <h2 class="product-title">Kids Orange Winter Clothes</h2>
+        <p class="product-price">$145.32 <del>$170.29</del> <span class="offer">19% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens12.jpg" alt="Mens Product 12" class="product-image" width="170px">
+        <h2 class="product-title">Mens White Clothes</h2>
+        <p class="product-price">$59.45 <del>$101.10</del> <span class="offer">31% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens13.jpg" alt="Mens Product 13" class="product-image" width="170px">
+        <h2 class="product-title">Kids Red Shirt</h2>
+        <p class="product-price">$115.23 <del>$170.89</del> <span class="offer">36% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women8.jpg" alt="Womens Product 8" class="product-image" width="170px">
+        <h2 class="product-title">Women Handbag</h2>
+        <p class="product-price">$78.12 <del>$99.99</del> <span class="offer">23% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens14.jpg" alt="Mens Product 14" class="product-image" width="170px">
+        <h2 class="product-title">Mens Blue Bag</h2>
+        <p class="product-price">$89.63 <del>$120.20</del> <span class="offer">29% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women9.jpg" alt="Womens Product 9" class="product-image" width="170px">
+        <h2 class="product-title">Women White Handbag</h2>
+        <p class="product-price">$105.23 <del>$165.32</del> <span class="offer">22% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women10.jpg" alt="Womens Product 10" class="product-image" width="170px">
+        <h2 class="product-title">Women Grey Bag</h2>
+        <p class="product-price">$123.77 <del>$151.22</del> <span class="offer">31% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids9.jpg" alt="Kids Product 9" class="product-image" width="170px">
+        <h2 class="product-title">Kids Winter Clothes</h2>
+        <p class="product-price">$29.99 <del>$32.22</del> <span class="offer">12% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Mens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Mens/Mens15.jpg" alt="Mens Product 15" class="product-image" width="170px">
+        <h2 class="product-title">Mens Multicolor Shirt</h2>
+        <p class="product-price">$65.32 <del>$99.99</del> <span class="offer">23% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids10.jpg" alt="Kids Product 10" class="product-image" width="170px">
+        <h2 class="product-title">Kids Pink Winter Clothes</h2>
+        <p class="product-price">$125.69 <del>$189.23</del> <span class="offer">41% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids11.jpg" alt="Kids Product 11" class="product-image" width="170px">
+        <h2 class="product-title">Kids Winter Clothes</h2>
+        <p class="product-price">$179.89 <del>$215.15</del> <span class="offer">26% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women11.jpg" alt="Womens Product 11" class="product-image" width="170px">
+        <h2 class="product-title">Women Green Bag</h2>
+        <p class="product-price">$189.26 <del>$250.23</del> <span class="offer">32% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women12.jpg" alt="Womens Product 12" class="product-image" width="170px">
+        <h2 class="product-title">Women Green-White Bag</h2>
+        <p class="product-price">$250.36 <del>$300.89</del> <span class="offer">38% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids12.jpg" alt="Kids Product 12" class="product-image" width="170px">
+        <h2 class="product-title">Kids Red Winter Clothes</h2>
+        <p class="product-price">$139.78 <del>$202.23</del> <span class="offer">33% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids13.jpg" alt="Kids Product 13" class="product-image" width="170px">
+        <h2 class="product-title">Kids White Winter Clothes </h2>
+        <p class="product-price">$214.65 <del>$289.21</del> <span class="offer">40% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women13.jpg" alt="Womens Product 13" class="product-image" width="170px">
+        <h2 class="product-title">Women Multicolor Clothes</h2>
+        <p class="product-price">$251.23 <del>$300.21</del> <span class="offer">35% off</span></p>
+    </div>
+
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids14.jpg" alt="Kids Product 14" class="product-image" width="170px">
+        <h2 class="product-title">Kids Yellow Winter Clothes</h2>
+        <p class="product-price">$114.56 <del>$120.21</del> <span class="offer">5% off</span></p>
+    </div>
+
+      <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women14.jpg" alt="Womens Product 14" class="product-image" width="170px">
+        <h2 class="product-title">Women Pink Bag</h2>
+        <p class="product-price">$189.78 <del>$210.23</del> <span class="offer">29% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Kids">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Kids/Kids15.jpg" alt="Kids Product 15" class="product-image" width="170px">
+        <h2 class="product-title">Kids Blue Winter Clothes</h2>
+        <p class="product-price">$206.54 <del>$290.89</del> <span class="offer">39% off</span></p>
+    </div>
+
+    <div class="product-card" data-category="Womens">
+        <div class="icon-container">
+        <a href="add_to_cart"><img src="Images/Cart.png" width="40px" class="cart" alt="Cart"></a>
+        <a href="add_to_wishlist"><img src="Images/Wishlist.png" width="40px" class="wishlist" alt="Wishlist"></a>
+        </div>
+        <img src="Women/Women15.jpg" alt="Womens Product 15" class="product-image" width="170px">
+        <h2 class="product-title">Women Dark Blue Clothes</h2>
+        <p class="product-price">$290.99 <del>$320.22</del> <span class="offer">10% off</span></p>
+    </div>
+
+    </div>
+</div>
+
+<!--News letter -->
+<div class="Newletter_container">
+    <h1 class="newsletter">Sign in to Newsletter</h1>
+    <p class="Newsletter_slogan">
+        ...and receive $25 coupon for first shopping.
+    </p>
+    <div class="input_form">
+    <input type="text" placeholder="Enter Your Email" name="email" class="input_bar">
+</div>
+  <button type="btn" class="input_subscribe">Subscribe</button>
+</div>
+
+<!--Footer-->
+<footer class="footer">
+    
+    <div class="footer_container">
+        <div class="footer_logo">
+            <a href="Index.html" style="color:rgb(206, 201, 201)"> FASHION</a>
+          </div>
+      <div class="footer_contact">
+        <h1 class="contact">Contact</h1>
+        <address class="address">
+            Address: 13 Tlemcen Road, Street 32, Beb-Wahren</br>
+            <span class="phone" padding-bottom="10px">Phone: +01 2222 365 /(+91) 01 2345 6789</br></span>
+            <span class="hours">Hours: 10:00 - 18:00, Mon - Sat</span> 
+        </address>
+      </div>
+
+      <div class="address_container">
+        <ul class="footer_list">
+            <h1 class="address_type">Address</h1>
+            <a href=""><li>About Us</li></a>
+            <a href=""><li>Delivery Information</li></a>
+            <a href=""><li>Privacy Policy</li></a>
+            <a href=""><li>Terms & Conditions</li></a>
+            <a href=""><li>Contact Us</li></a>
+            <a href=""><li>Support Center</li></a>
+        </ul>
+      </div>
+
+      <div class="Account_container">
+        <h1 class="My_Account">My Account</h1>
+        
+        <a href=""><li>Sign In</li></a>
+        <a href=""><li>View Cart</li></a>
+        <a href=""><li>My Wishlist</li></a>
+        <a href=""><li>Track My Order</li></a>
+        <a href=""><li>Help</li></a>
+        <a href=""><li>Order</li></a>
+            
+      </div>
+    </div>
+</hr>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
